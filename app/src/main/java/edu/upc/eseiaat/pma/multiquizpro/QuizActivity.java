@@ -35,13 +35,7 @@ public class QuizActivity extends AppCompatActivity {
         btn_prev = (Button) findViewById(R.id.btn_prev);
 
         all_questions = getResources().getStringArray(R.array.all_questions);
-        answer_is_correct = new boolean[all_questions.length];
-        answer = new int[all_questions.length];
-        for (int i = 0; i < answer.length; i++) {
-            answer[i] = -1;  }
-
-        current_question = 0;
-        showQuestion();
+        startOver();
 
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +61,17 @@ public class QuizActivity extends AppCompatActivity {
                 });
             }});}
 
-            private void checkAnswer() {
+    private void startOver() {
+        answer_is_correct = new boolean[all_questions.length];
+        answer = new int[all_questions.length];
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = -1;  }
+
+        current_question = 0;
+        showQuestion();
+    }
+
+    private void checkAnswer() {
                 int id = group.getCheckedRadioButtonId();
                 int current_answer = -1;
 
@@ -119,12 +123,7 @@ public class QuizActivity extends AppCompatActivity {
                 for (int i=0; i< all_questions.length; i++) {
                     if (answer_is_correct[i]) correct++;
                     else { if (answer[i] == -1 )unanswered++;
-                        else incorrect++;}
-                }
-
-                /*String message = getString(R.string.correct) + ": " + correct +
-                        getString(R.string.incorrect) + ": " + incorrect +
-                        getString(R.string.unanswered) + ": " + unanswered;*/
+                        else incorrect++;}}
 
                String message = String.format("%s: %d\n%s: %d\n%s: %d\n", getString(R.string.correct),
                        correct, getString(R.string.incorrect), incorrect, getString(R.string.unanswered),unanswered);
@@ -135,9 +134,11 @@ public class QuizActivity extends AppCompatActivity {
                 builder.setPositiveButton(R.string.finish, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        finish();
-                    }
-                });
+                        finish();}});
+                builder.setNegativeButton(R.string.startover, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        startOver();  }});
 
                 builder.create().show();
 

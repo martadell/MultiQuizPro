@@ -5,16 +5,17 @@
     <string name="next">Next</string>
     <string name="finish">Finish</string>
     <string name="prev">Previous</string>
-
-    <array name="all_questions">
-        <item>What is the capital of Bhutan?;Ouagadougou;Phnom Penh;*Thimphu;Zgighiti</item>
-        <item>What is the capital of Eritrea?;Kampala;*Asmara;Kigali;Antananarivo</item>
-    </array>
     <string name="label_question">Question</string>
     <string name="text_question" translatable="false">What is the capital of Bhutan?</string>
     <string name="results">Results</string>
     <string name="check">Check</string>
     <string name="startover">Start Over</string>
     <string name="unanswered">Unanswered</string>
+
+    <array name="all_questions">
+        <item>What is the capital of Bhutan?;Ouagadougou;Phnom Penh;*Thimphu;Zgighiti</item>
+        <item>What is the capital of Eritrea?;Kampala;*Asmara;Kigali;Antananarivo</item>
+    </array>
+
 
 </resources>
