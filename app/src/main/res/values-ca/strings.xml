@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="check">Comprova</string>
+    <string name="correct">Correcte</string>
+    <string name="finish">Acaba</string>
+    <string name="incorrect">Incorrecte</string>
+    <string name="label_question">Pregunta</string>
+    <string name="next">Següent</string>
+    <string name="prev">Anterior</string>
+    <string name="results">Resultats</string>
+    <string name="startover">Torna a començar</string>
+    <string name="unanswered">Sense contestar</string>
+
+    <array name="all_questions">
+        <item>Quina és la capital Bhutan?;Ouagadougou;Phnom Penh;*Thimphu;Zgighiti</item>
+        <item>Quina és la capital d'Eritrea?;Kampala;*Asmara;Kigali;Antananarivo</item>
+        <item>Quina és la capital de Timor Est?;*Dili;Kupang;Ocussi;Palu</item>
+    </array>
+</resources>

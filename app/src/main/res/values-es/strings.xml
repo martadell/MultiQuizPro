@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="results">Resultados</string>
+    <string name="check">Comprueba</string>
+    <string name="correct">Correcto</string>
+    <string name="finish">Acaba</string>
+    <string name="incorrect">Incorrecto</string>
+    <string name="label_question">Pregunta</string>
+    <string name="next">Siguiente</string>
+    <string name="prev">Anterior</string>
+    <string name="startover">Volver a empezar</string>
+    <string name="unanswered">Sin contestar</string>
+
+    <array name="all_questions">
+        <item>¿Cuál es la capital de Bután?;Ouagadougou;Phnom Penh;*Thimphu;Zgighiti</item>
+        <item>¿Cuál es la capital de Eritrea?;Kampala;*Asmara;Kigali;Antananarivo</item>
+        <item>¿Cuál es la capital de Timor Oriental?;*Dili;Kupang;Ocussi;Palu</item>
+    </array>
+</resources>
