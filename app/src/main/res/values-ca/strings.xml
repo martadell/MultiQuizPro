@@ -13,7 +13,7 @@
 
     <array name="all_questions">
         <item>Quina és la capital Bhutan?;Ouagadougou;Phnom Penh;*Thimphu;Zgighiti</item>
-        <item>Quina és la capital d'Eritrea?;Kampala;*Asmara;Kigali;Antananarivo</item>
+        <item>Quina és la capital d´Eritrea?;Kampala;*Asmara;Kigali;Antananarivo</item>
         <item>Quina és la capital de Timor Est?;*Dili;Kupang;Ocussi;Palu</item>
     </array>
 </resources>

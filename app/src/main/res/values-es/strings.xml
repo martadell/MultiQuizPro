@@ -12,8 +12,8 @@
     <string name="unanswered">Sin contestar</string>
 
     <array name="all_questions">
-        <item>¿Cuál es la capital de Bután?;Ouagadougou;Phnom Penh;*Thimphu;Zgighiti</item>
-        <item>¿Cuál es la capital de Eritrea?;Kampala;*Asmara;Kigali;Antananarivo</item>
-        <item>¿Cuál es la capital de Timor Oriental?;*Dili;Kupang;Ocussi;Palu</item>
+        <item>Cuál es la capital de Bután?;Ouagadougou;Phnom Penh;*Thimphu;Zgighiti</item>
+        <item>Cuál es la capital de Eritrea?;Kampala;*Asmara;Kigali;Antananarivo</item>
+        <item>Cuál es la capital de Timor Oriental?;*Dili;Kupang;Ocussi;Palu</item>
     </array>
 </resources>
