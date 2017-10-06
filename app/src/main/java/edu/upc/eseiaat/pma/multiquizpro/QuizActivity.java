@@ -14,15 +14,31 @@ import android.widget.Toast;
 
 public class QuizActivity extends AppCompatActivity {
 
+    public static final String CORRECT_ANSWER = "correct_answer";
+    public static final String CURRENT_QUESTION = "current_question";
+    public static final String ANSWER_IS_CORRECT = "answer_is_correct";
+    public static final String ANSWER = "answer";
     private int ids_answers[] = {
             R.id.answer1, R.id.answer2, R.id.answer3, R.id.answer4 };
-    private int correct_answer, current_question;
     private String[] all_questions;
-    private boolean[] answer_is_correct;
-    private int[] answer;
+
     private TextView text_question;
     private RadioGroup group;
     private Button btn_next, btn_prev;
+
+    private int correct_answer, current_question;
+    private boolean[] answer_is_correct;
+    private int[] answer;
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        Log.i("lifecycle", "onSaveInstanceState");
+        super.onSaveInstanceState(outState);
+
+    outState.putInt(CORRECT_ANSWER, correct_answer);
+    outState.putInt(CURRENT_QUESTION, current_question);
+    outState.putBooleanArray(ANSWER_IS_CORRECT, answer_is_correct);
+    outState.putIntArray(ANSWER, answer);}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +51,17 @@ public class QuizActivity extends AppCompatActivity {
         btn_prev = (Button) findViewById(R.id.btn_prev);
 
         all_questions = getResources().getStringArray(R.array.all_questions);
-        startOver();
+
+        if(savedInstanceState == null) {
+        startOver(); }
+
+        else {
+           Bundle state = savedInstanceState;
+            correct_answer = state.getInt(CORRECT_ANSWER);
+            current_question = state.getInt(CURRENT_QUESTION);
+            answer_is_correct = state.getBooleanArray(ANSWER_IS_CORRECT);
+            answer = state.getIntArray(ANSWER);
+            showQuestion(); }
 
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,6 +11,10 @@
     <string name="check">Check</string>
     <string name="startover">Start Over</string>
     <string name="unanswered">Unanswered</string>
+    <string name="correct_answer">correct_answer</string>
+    <string name="current_question">current_question</string>
+    <string name="answer_is_correct">answer_is_correct</string>
+    <string name="answer">answer</string>
 
     <array name="all_questions">
         <item>What is the capital of Bhutan?;Ouagadougou;Phnom Penh;*Thimphu;Zgighiti</item>
